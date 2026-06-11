@@ -3,9 +3,9 @@
 #include "led_func.h"
 
 int main() {
-    /* loop para piscar os leds, internos e o externo, em uma sequência específica */
-    while(1){
+SystemInit();
+
+while(1){
         LedFunc();
     }    
 }
-
