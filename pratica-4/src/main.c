@@ -4,7 +4,6 @@
 #include "system_init.h"
 
 int main() {
-// Inicializacao dos clocks e configuracao do timer
 SystemInit();
 
 while(1){

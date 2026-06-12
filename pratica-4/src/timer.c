@@ -8,9 +8,6 @@ static unsigned int DMTimerWritedPostedStatusGet() {
     return (HWREG(DMTIMER7_TWPS));
 }
 
-/* define uma funcao usada para isolar um bit especifico para verificacao. 
-   Depois verifica se o bit 2 esta em posted mode, se estiver avanca para o while
-   no while, o codigo fica travado esperando a escrita terminar */
 #define DMTimerWaitForWrite(reg) \
     if(HWREG(DMTIMER7_TSICR) & (1 << 2)) \
     while((reg & DMTimerWritedPostedStatusGet()));
