@@ -7,7 +7,7 @@ CFLAGS = -mcpu=cortex-a8 -Os -g -Wall -Iinc
 
 LDFLAGS = -T src/memmap.ld
 
-SRCS = src/startup.s src/main.c src/timer.c src/uart.c
+SRCS = src/startup.s src/main.c src/timer.c src/uart.c src/system_init.c
 
 OBJS = $(addprefix obj/, $(notdir $(SRCS:.c=.o)))
 OBJS := $(OBJS:.s=.o)

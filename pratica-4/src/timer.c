@@ -1,7 +1,7 @@
 #include "soc_AM335x.h"
 #include "timer.h"
 
-#define TIMER_1US_COUNT 24000000
+#define TIMER_1US_COUNT     24000
 
 static unsigned int DMTimerWritedPostedStatusGet() {
     /* Retorna o status do registrador TWPS */
