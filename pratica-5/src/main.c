@@ -5,6 +5,11 @@
 #include "func_buttons.h"
 #include "uart.h"
 
+extern volatile bool FlagGPIO;
+extern volatile bool FlagGPIO2; 
+
+extern 
+
 int main() {
     /* Inicialização dos GPIOs e das interrupções */
     SystemInit();

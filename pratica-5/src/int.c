@@ -1,6 +1,4 @@
 #include "soc_AM335x.h"
-#include "uart.h"
-#include "timer.h"
 #include "int.h"
 #include "stdbool.h"
 
@@ -10,7 +8,7 @@
 #define SYS_INT_GPIOINT1A       98
 #define SYS_INT_TINT7           95
 volatile bool FlagGPIO;
-volatile bool FlagGPIO2; 
+volatile bool FlagGPIO2;
 volatile bool FlagTimer;
 
 void IntAINTCInit() {

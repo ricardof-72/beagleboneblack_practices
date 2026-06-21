@@ -2,6 +2,8 @@
 #include "int.h"
 
 #include "soc_AM335x.h"
+extern volatile bool FlagGPIO;
+extern volatile bool FlagGPIO2;
 
 void RPressedButton() {
     /* botão da direita pressionado */

@@ -4,6 +4,7 @@
 
 #define TIMER_1MS_COUNT 24000000
 #define TIMER_OVERFLOW 0xFFFFFFFF
+extern volatile bool FlagTimer;
 
 unsigned int DMTimerWritedPostedStatusGet() {
     /* Retorna o status do registrador TWPS */
