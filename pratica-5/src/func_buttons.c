@@ -1,5 +1,6 @@
 #include "func_buttons.h"
-#include "int.h"
+#include "timer.h"
+#include "stdbool.h"
 
 #include "soc_AM335x.h"
 extern volatile bool FlagGPIO;
