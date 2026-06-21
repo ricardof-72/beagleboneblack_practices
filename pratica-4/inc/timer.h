@@ -1,5 +1,6 @@
 #ifndef TIMER_H
 #define TIMER_H
+#define TIMER_1US_COUNT 24000000
 
 /* define uma funcao usada para isolar um bit especifico para verificacao. 
    Depois verifica se o bit 2 esta em posted mode, se estiver avanca para o while

@@ -1,8 +1,6 @@
 #include "soc_AM335x.h"
 #include "timer.h"
 
-#define TIMER_1US_COUNT     24000
-
 static unsigned int DMTimerWritedPostedStatusGet() {
     /* Retorna o status do registrador TWPS */
     return (HWREG(DMTIMER7_TWPS));
@@ -46,7 +44,7 @@ void DMTimerDisable() {
 
 void uDelay(unsigned int us) {
     // Calcula o total de ticks necessarios
-    unsigned int ticks_needed = us * TIMER_1US_COUNT;
+    unsigned int ticks_needed = us * TIMER_1MS_COUNT;
     
     DMTimerCounterSet(0);
     DMTimerEnable();
