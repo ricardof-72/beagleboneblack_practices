@@ -1,1 +1,1 @@
-Practical exercises for some courses using the Beaglebone Black board.
+Practical exercises using the Beaglebone Black board.
